@@ -1,10 +1,10 @@
 package discord_rpc;
 
 import cpp.Callable;
-import cpp.Function;
 import cpp.ConstCharStar;
-import cpp.RawConstPointer;
 import cpp.ConstPointer;
+import cpp.Function;
+import cpp.RawConstPointer;
 
 // PUBLIC FACING CLASS
 
@@ -210,7 +210,7 @@ typedef DiscordPresenceOptions = {
     @:optional var instance : Int;
 }
 
-@:enum abstract Reply(Int) from Int to Int {
+enum abstract Reply(Int) from Int to Int {
     var No = 0;
     var Yes = 1;
     var ignore = 2;
